@@ -1,0 +1,6 @@
+<h1>Exchange Delivery</h1>
+<h2>Projeto sobre Processo de Design de Interação desenvolvido na disciplina de Interação Humano-Computador</h2>
+<h3>Escopo do sistema proposto pelo docente:</h3>
+<p>
+  ExchangeDelivery – Um sistema mobile onde o usuário poderá realizar trocas de moedas estrangeiras (real para dólar, real para euro, dólar para real e euro para real). Como toda troca de moeda no Brasil, os dados do usuário, bem como seu documento de identificação precisam ser apresentados e registrados na Receita Federal (Considere isso um serviço existente que seu sistema invocará, com os dados e documentos disponibilizados, claro). O sistema possibilitará que o usuário receba o dinheiro em casa (ele deve poder rastrear a moeda desde a saída da casa de Câmbio até a sua casa e vice-versa). Caso a troca de moeda for de real para uma moeda estrangeira, o usuário transfere para a casa de câmbio o recurso via PIX e recebe em casa a moeda estrangeira convertida. Caso seja a troca de moeda estrangeira para real, a casa de câmbio precisa recolher a moeda estrangeira com o usuário, transferindo a conversão em real via PIX. Considere que o sistema ExchangeDelivery é para uma casa de câmbio específica, nãoum serviço que possa ser utilizada por várias.
+</p>
