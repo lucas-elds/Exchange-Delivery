@@ -1,0 +1,185 @@
+header {
+  background-color: #000000;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 70px 0;
+}
+
+.titulo {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+.linha {
+  border-bottom: 1px solid black;
+  color: #444444;
+  width: 15%;
+}
+
+.cambio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0.5rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.titulo-moeda {
+  margin-left: 2rem;
+}
+
+.simbolo {
+  text-align: center;
+  width: 35px;
+  height: 45px;
+  border: 1px solid #000000;
+  border-right: 0;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.valor {
+  height: 45px;
+  border: 1px solid #000000;
+  border-left: 0;
+  border-right: 0;
+  font-size: 1.2rem;
+  width: 150px;
+}
+
+.simbolo:focus,
+.valor:focus {
+  outline: none;
+}
+
+.dropbtn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 6px;
+  font-size: 18px;
+  border: 1px solid #000000;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 5px;
+  width: 90px;
+  height: 2.9rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px #000000;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: #000000;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #909090;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-content li:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.comprar-cambio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.87rem;
+}
+
+.comprar-cambio button {
+  margin: 0.25rem;
+  width: 81%;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 1rem;
+  background-color: #42b85d;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.comprar-cambio button:hover {
+  background-color: #69cd80;
+}
+
+footer {
+  background-color: #000000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 1rem 0rem;
+}
+
+.atalho {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.atalho p {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}

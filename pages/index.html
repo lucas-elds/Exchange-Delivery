@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="img/logo.png" />
+</head>
+
+<body>
+  <header>
+    <a href="" class="logo">
+      <img src="../img/logo.png" alt="Logo">
+      <h1>Exchange<br>Delivery</h1>
+    </a>
+    <button onclick="logar()" id="user"><i class="fa-solid fa-right-from-bracket"></i>
+      <p id="stts-user">Sair</p>
+    </button>
+  </header>
+  <main>
+    <h1 class="titulo">
+      Simulação
+      <p class="linha"></p>
+    </h1>
+
+    <h2 class="titulo-moeda">Moeda original:</h2>
+    <div class="cambio">
+      <input class="simbolo" type="text" value="R$" readonly>
+      <input class="valor" type="number" placeholder="0,00">
+      <div class="dropdown">
+        <button onclick="mostrarMoedas(0)" class="dropbtn">
+          <p class="moeda">🇧🇷 BRL </p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <ul style="display: none;" class="dropdown-content">
+          <li onclick="clickMoeda(0, 0)">🇧🇷 BRL</li>
+          <li onclick="clickMoeda(0, 1)">🇺🇸 USD</li>
+          <li onclick="clickMoeda(0, 2)">🇪🇺 EUR</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="titulo-moeda">Moeda final:</h2>
+    <div class="cambio">
+      <input class="simbolo" type="text" value="$" readonly>
+      <input class="valor" type="number" placeholder="0,00">
+      <div class="dropdown">
+        <button onclick="mostrarMoedas(1)" class="dropbtn">
+          <p class="moeda">🇺🇸 USD </p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <ul style="display: none;" class="dropdown-content">
+          <li onclick="clickMoeda(1, 0)">🇧🇷 BRL</li>
+          <li onclick="clickMoeda(1, 1)">🇺🇸 USD</li>
+          <li onclick="clickMoeda(1, 2)">🇪🇺 EUR</li>
+        </ul>
+      </div>
+    </div>
+    <div class="comprar-cambio">
+      <h3>Deseja prosseguir com o câmbio acima?</h3>
+      <button onclick="redirecionar('finalizar')">Comprar câmbio</button>
+    </div>
+
+  </main>
+  <footer>
+    <button style="color: #30df59;" class="atalho">
+      <i class="fa-solid fa-house"></i>
+      <p>Home</p>
+    </button>
+    <button onclick="redirecionar('cambios')" class="atalho">
+      <i class="fa-solid fa-money-bill-transfer"></i>
+      <p>Câmbios</p>
+    </button>
+    <button class="atalho">
+      <i class="fa-solid fa-square-poll-vertical"></i>
+      <p>Cotações</p>
+    </button>
+    <button onclick="redirecionar('perfil')" class="atalho">
+      <i class="fa-solid fa-user"></i>
+      <p>Perfil</p>
+    </button>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

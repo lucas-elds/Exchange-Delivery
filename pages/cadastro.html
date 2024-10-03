@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="icon" type="image/png" href="../img/logo.png" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="../img/logo.png" alt="Logo">
+      <h1>Exchange<br>Delivery</h1>
+    </a>
+  </header>
+
+  <a id="voltar" href="login.html">
+    <i class="fa-solid fa-circle-arrow-left"> VOLTAR</i>
+  </a>
+
+  <main>
+    <h1 class="titulo">
+      Cadastro
+      <p class="linha"></p>
+    </h1>
+
+    <form>
+      <div class="input-cad">
+        <label for="nome">Nome completo:</label>
+        <input type="text" name="nome">
+      </div>
+
+      <div class="input-cad">
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf">
+      </div>
+
+      <div id="nasc-rg">
+        <div id="nasc" class="input-cad">
+          <label for="nascimento">Nascimento:</label>
+          <input type="date" name="nascimento">
+        </div>
+
+        <div id="rg" class="input-cad">
+          <label for="rg">RG:</label>
+          <input type="text" name="rg">
+        </div>
+      </div>
+
+      <div id="cep-est">
+        <div id="cep" class="input-cad">
+          <label for="cep">CEP:</label>
+          <input type="text" name="cep">
+        </div>
+
+        <div id="est" class="input-cad">
+          <label for="estado">Estado:</label>
+          <input type="text" name="estado">
+        </div>
+      </div>
+
+      <div id="cid-bai">
+        <div id="cid" class="input-cad">
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="cidade">
+        </div>
+
+        <div id="bai" class="input-cad">
+          <label for="bairro">Bairro:</label>
+          <input type="text" name="bairro">
+        </div>
+      </div>
+
+      <div id="rua-num">
+        <div id="rua" class="input-cad">
+          <label for="rua">Rua:</label>
+          <input type="text" name="rua">
+        </div>
+
+        <div id="num" class="input-cad">
+          <label for="numero">Número:</label>
+          <input type="text" name="numero">
+        </div>
+      </div>
+
+      <div class="input-cad">
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha">
+      </div>
+
+      <div class="input-cad">
+        <label for="confsenha">Confirmar senha:</label>
+        <input type="password" name="confsenha">
+      </div>
+
+
+      <div class="foto-rg">
+        <p>Frente do RG:</p>
+        <div class="btn-anexar">
+          <input type="text" value="Vazio" readonly>
+          <button>Anexar imagem</button>
+        </div>
+      </div>
+
+      <div class="foto-rg">
+        <p>Verso do RG:</p>
+        <div class="btn-anexar">
+          <input type="text" value="Vazio" readonly>
+          <button>Anexar imagem</button>
+        </div>
+      </div>
+
+
+      <button id="cadastrar">
+        Cadastrar
+      </button>
+    </form>
+
+
+  </main>
+  <script>
+    const botao = document.getElementById('cadastrar');
+    botao.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.location.href = 'analise.html';
+    });
+  </script>
+</body>
+
+</html>
